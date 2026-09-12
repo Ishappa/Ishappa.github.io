@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+
+  --font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono",
+    monospace;
+}
+
+:root {
+  --bg: #faf9f7;
+  --surface: #ffffff;
+  --fg: #0b0b0c;
+  --muted: #5f5f66;
+  --subtle: #6a6a71;
+  --line: #e3e1dd;
+  --line-strong: #cbc8c2;
+  --accent: #b8431f;
+  --accent-soft: #f7ece7;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0c0c0d;
+    --surface: #141416;
+    --fg: #f4f3f1;
+    --muted: #9c9ca3;
+    --subtle: #8d8d95;
+    --line: #26262a;
+    --line-strong: #3c3c42;
+    --accent: #e8794a;
+    --accent-soft: #1e1611;
+    color-scheme: dark;
+  }
+}
+
+* {
+  border-color: var(--line);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* Guards against any single element forcing a horizontal scrollbar on mobile. */
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* ---- Hero texture ------------------------------------------------------ */
+/* A faint dot grid, masked out before it reaches the content below. */
+.hero-texture {
+  background-image: radial-gradient(circle at 1px 1px, var(--line-strong) 1px, transparent 0);
+  background-size: 26px 26px;
+  opacity: 0.45;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 72%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 72%);
+}
+
+/* ---- Reveal on scroll ------------------------------------------------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-reveal="shown"] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

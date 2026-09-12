@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.DS_Store
+.env*.local
+
+# Source resume variants are kept locally, not published.
+# The single resume served by the site lives at public/Ishappa_N_Resume.pdf
+/Ishappa_FE_Resume.pdf
+/Ishappa_FullStack_AI_Resume.pdf
+/Ishappa_FullStack_Java_Resume.pdf
