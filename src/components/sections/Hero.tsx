@@ -1,8 +1,17 @@
-import { ArrowDown, FileDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, FileDown, Github, Linkedin, Mail, Smartphone, TrendingUp, Users, Zap } from "lucide-react";
 import { ActionButton } from "@/components/ui/ActionButton";
 import { Container } from "@/components/ui/Container";
+import { impact } from "@/data/impact";
 import { profile } from "@/data/profile";
 import { asset } from "@/lib/site";
+
+/** Pulled from the same verified impact data used in section 03 — a 5-second preview, not a duplicate claim. */
+const heroFacts = [
+  { icon: Users, ...impact.find((i) => i.label === "Monthly users reached")! },
+  { icon: TrendingUp, ...impact.find((i) => i.label === "Lighthouse performance")! },
+  { icon: Zap, ...impact.find((i) => i.label === "Faster mobile cold start")! },
+  { icon: Smartphone, metric: "Live", label: "On the App Store & Google Play", detail: "" },
+];
 
 const facts = [
   { key: "Role", value: "Software Engineer" },
@@ -39,7 +48,7 @@ export function Hero() {
               <span aria-hidden="true" className="mx-2 text-line-strong">
                 —
               </span>
-              <span className="text-accent">Mobile &amp; Frontend</span>
+              <span className="text-accent underline decoration-2 underline-offset-[6px]">Mobile &amp; Frontend</span>
             </p>
 
             <ul className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-[12px] text-muted">
@@ -59,7 +68,20 @@ export function Hero() {
               {profile.intro}
             </p>
 
-            <div className="mt-9 flex flex-wrap gap-2.5">
+            <ul className="mt-7 flex flex-wrap gap-2.5">
+              {heroFacts.map((fact) => (
+                <li
+                  key={fact.label}
+                  className="flex items-center gap-2 rounded-sm bg-accent-soft px-3 py-2"
+                >
+                  <fact.icon size={15} aria-hidden="true" className="shrink-0 text-accent" />
+                  <span className="font-mono text-[13px] font-medium text-fg">{fact.metric}</span>
+                  <span className="text-[13px] text-muted">{fact.label}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-7 flex flex-wrap gap-2.5">
               <ActionButton
                 href="#work"
                 variant="primary"
