@@ -48,7 +48,7 @@ export function Hero() {
               <span aria-hidden="true" className="mx-2 text-line-strong">
                 —
               </span>
-              <span className="text-accent underline decoration-2 underline-offset-[6px]">Mobile &amp; Frontend</span>
+              <span className="text-accent">Mobile &amp; Frontend</span>
             </p>
 
             <ul className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-[12px] text-muted">
