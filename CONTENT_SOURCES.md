@@ -79,9 +79,8 @@ This file is the audit trail. If a claim isn't listed here, it shouldn't be on t
 | Connector layer per system (Omnitron, GA4), auth/retries/response mapping/aggregation, pooled async HTTP | AI |
 | Hallucination prevention: grounding in live tool results, reporting unavailability, surfacing date range/timezone/filters | AI |
 | Client used it to approve a broader AI initiative | AI, JV, FE |
-| PerfLens CLI: Lighthouse run, JSON snapshot, baseline diff, threshold engine, CI failure report | AI, FE |
-| Multi-run median aggregation, pinned throttling, tolerance bands | AI, FE |
-| Optional, non-gating Groq/Llama root-cause analysis; works offline; facts separated from inference | AI, FE |
+| PerfLens CLI: pre/post snapshot capture, diff engine, automatic PR/MR comments across GitLab/GitHub/Bitbucket, web (Lighthouse CI) + React Native (Hermes profiler) | USER — repo README, 2026-09 |
+| AI root-cause analysis (Claude-based agent) — in development, not yet shipped | USER — repo README, 2026-09 |
 | Claude Code + GitHub Copilot used daily across the SDLC | FE, AI, JV |
 
 ## Credentials
@@ -102,6 +101,18 @@ The resumes hedge some skills. The site keeps the hedge:
 - **JWT auth, SSE streaming, RAG, embeddings & vector search, MCP** — listed in the AI resume as
   "studied, not yet shipped to production". Removed from the site entirely at Ishappa's request,
   rather than shown without the qualifier.
+
+## PerfLens: repo README supersedes the original resume wording
+
+Ishappa's own resume text described PerfLens as already having "optional AI root-cause analysis
+(Groq-hosted Llama)... deliberately non-gating" — implying the AI piece was shipped. The actual
+project README he shared (2026-09) shows a week-by-week roadmap where only **Week 1** is checked
+done (CLI, snapshot engine, diff engine, CI pipelines for GitLab/GitHub/Bitbucket); AI root-cause
+analysis is explicitly listed as "(Week 3)" using a Claude-based agent package, not Groq/Llama, and
+carries no checkmark. The site now describes PerfLens using the more detailed and more current
+README, and states the AI feature as **in development**, not shipped — the honest read of Ishappa's
+own roadmap, not a downgrade invented here. If Week 3 has since been completed, this should be
+updated again to reflect that.
 
 ## Stated by Ishappa directly (USER)
 

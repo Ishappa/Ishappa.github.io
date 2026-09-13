@@ -381,53 +381,76 @@ export const projects: Project[] = [
     kind: "independent",
     label: "Independent Project",
     summary:
-      "A Node.js/TypeScript CLI that catches web performance regressions before a pull request merges.",
+      "A CLI that captures before/after performance snapshots on every pull request, diffs them, and posts the regression report as a PR comment — for both web and React Native.",
     product:
-      "A command-line performance regression gate for CI: it runs Lighthouse against a build and fails the job when metrics regress against a baseline.",
+      "A pre/post performance tool: every pull request gets a snapshot before the change, a snapshot after it, a diff report, and an automatic PR/MR comment showing what regressed.",
     challenge:
-      "Lighthouse results vary between runs, so a naive CI gate produces false failures and gets disabled by the team it was meant to protect.",
+      "Performance regressions are easy to miss in review, and teams work across different CI platforms (GitLab, GitHub, Bitbucket) and app types (web and React Native), each needing a different profiling approach.",
     contribution:
-      "Built the CLI, the metric snapshot and baseline diff, the configurable threshold engine, and an optional AI root-cause step kept strictly outside the gating path.",
+      "Built the CLI, the snapshot and diff engine, and CI templates for all three platforms, structured as an installable npm package with a typed core (Zod schemas) as the single source of truth.",
     result:
-      "A deterministic CI check that runs offline, with measured facts and model inference separated in the report.",
-    tech: ["Node.js", "TypeScript", "Lighthouse", "CI/CD", "Groq", "Llama"],
+      "A working CLI with snapshot capture, diffing and automatic PR/MR comments shipped across GitLab, GitHub and Bitbucket; AI-based root-cause analysis is the next phase in development.",
+    tech: [
+      "Node.js",
+      "TypeScript",
+      "pnpm workspaces",
+      "Zod",
+      "Lighthouse CI",
+      "Hermes Profiler",
+      "GitLab CI",
+      "GitHub Actions",
+      "Bitbucket Pipelines",
+    ],
+    linksTitle: "Repository",
+    links: [],
+    linksNote: "Source not yet public.",
     caseStudy: {
       overview:
-        "A CLI that catches web performance regressions before a pull request merges: it runs Lighthouse against a build, snapshots metrics to JSON, diffs them against a baseline through a configurable threshold engine, and fails the CI job with a regression report.",
+        "A CLI that automatically captures a performance snapshot before and after a code change, diffs the two, and posts the regression report directly as a comment on the pull or merge request — for React/Next.js (via Lighthouse CI) and React Native (via the Hermes profiler), across GitLab, GitHub and Bitbucket.",
       role: "Independent project — designed and built end to end.",
       stack: [
-        { group: "CLI", items: ["Node.js", "TypeScript"] },
-        { group: "Measurement", items: ["Lighthouse", "Multi-run median aggregation", "Pinned throttling"] },
-        { group: "Optional AI", items: ["Groq", "Llama"] },
+        { group: "Core", items: ["Node.js", "TypeScript", "pnpm workspaces", "Zod (shared schemas)"] },
+        { group: "Web profiling", items: ["Lighthouse CI"] },
+        { group: "Mobile profiling", items: ["Hermes Profiler (React Native)"] },
+        { group: "CI integration", items: ["GitLab CI", "GitHub Actions", "Bitbucket Pipelines"] },
+        {
+          group: "In development",
+          items: ["Claude-based AI root-cause agent", "Next.js results dashboard"],
+        },
       ],
       engineeringWork: [
         {
-          title: "Regression gate",
+          title: "Snapshot and diff engine",
           detail:
-            "Runs Lighthouse against a build, snapshots metrics to JSON, diffs against a baseline through a configurable threshold engine, and fails the CI job with a regression report.",
+            "Captures a labelled performance snapshot before and after a change (perflens capture --label pre/post), then diffs the two to produce a per-page regression report (perflens compare).",
         },
         {
-          title: "Variance suppression",
+          title: "Multi-platform CI integration",
           detail:
-            "Uses multi-run median aggregation, pinned throttling and tolerance bands to suppress false failures from Lighthouse variance, keeping the CI check deterministic and able to run offline.",
+            "Ships ready-to-use pipeline templates for GitLab CI, GitHub Actions and Bitbucket Pipelines, each posting the before/after diff as an automatic comment on the PR or MR.",
         },
         {
-          title: "Non-gating AI root-cause analysis",
+          title: "Cross-platform profiling from one CLI",
           detail:
-            "Added optional AI root-cause analysis via Groq-hosted Llama, correlating metric regressions with changed files — deliberately non-gating, with measured facts and model inference kept separate in the report.",
+            "Supports both web projects (Lighthouse CI) and React Native apps (Hermes profiler) through the same capture/compare/report commands.",
+        },
+        {
+          title: "Typed core as a single source of truth",
+          detail:
+            "All shared types are defined once as Zod schemas, keeping snapshot format, config shape and CLI output consistent across the whole tool.",
         },
       ],
       challenges: [
         {
-          title: "Lighthouse variance causing false CI failures",
+          title: "Three CI platforms, three auth models",
           detail:
-            "Run-to-run variance makes a naive threshold check untrustworthy. Multi-run median aggregation, pinned throttling and tolerance bands keep the gate deterministic.",
+            "GitLab, GitHub and Bitbucket each authenticate and post PR/MR comments differently — GitLab via CI_JOB_TOKEN or a personal access token, GitHub via an auto-provided token, Bitbucket via an app password. The CLI ships a working template and setup steps for each rather than a one-size-fits-all integration.",
         },
-        {
-          title: "Keeping AI out of the gating path",
-          detail:
-            "An LLM call in a CI gate makes builds non-deterministic and network-dependent. The AI analysis is optional and non-gating, so the check still works offline.",
-        },
+      ],
+      impact: [
+        "Working CLI: init, capture, compare and report commands",
+        "Automatic PR/MR regression comments on GitLab, GitHub and Bitbucket",
+        "AI root-cause analysis and a results dashboard are the current in-development phase",
       ],
     },
   },

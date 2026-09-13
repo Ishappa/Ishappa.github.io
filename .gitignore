@@ -11,3 +11,6 @@ next-env.d.ts
 /Ishappa_FE_Resume.pdf
 /Ishappa_FullStack_AI_Resume.pdf
 /Ishappa_FullStack_Java_Resume.pdf
+
+# Local backups of resume PDFs before edits — not published
+/resume-backups/

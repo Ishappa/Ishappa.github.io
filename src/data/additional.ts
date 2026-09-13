@@ -40,12 +40,12 @@ export const aiTiers: {
   },
   {
     tier: "AI Feature Development",
-    kicker: "An AI feature inside a non-AI tool",
+    kicker: "An AI feature being added to a working non-AI tool",
     points: [
-      "Added optional AI root-cause analysis to the PerfLens CLI using Groq-hosted Llama, correlating Lighthouse regressions with changed files.",
-      "Kept it deliberately non-gating so the CI check itself stays deterministic and works offline, with measured facts and model inference separated in the report.",
+      "Built PerfLens as a working CLI first: performance snapshot capture, pre/post diffing, and automatic PR/MR regression comments across GitLab, GitHub and Bitbucket, for both web and React Native.",
+      "A Claude-based agent for AI root-cause analysis — correlating a regression with the changed files behind it — is the current in-development phase, planned to stay outside the CI gating path so the deterministic check keeps working without it.",
     ],
-    tech: ["Groq", "Llama", "Node.js", "TypeScript"],
+    tech: ["Node.js", "TypeScript", "Claude API (in development)"],
     projectSlug: "perflens",
   },
   {
