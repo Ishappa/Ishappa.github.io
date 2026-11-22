@@ -23,13 +23,13 @@ export function AdditionalEngineering() {
               href={`${basePath}/work/koton-multi-region-platform/`}
               className="transition-colors duration-150 hover:text-accent"
             >
-              Koton — Multi-Region E-Commerce Platform
+              Koton Multi-Region E-Commerce Platform
             </a>
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-muted">
-            Feature work and production support on a large Django storefront with Jinja2
-            server-rendered pages — country and language switching resolved into request context,
-            with cache-key correctness to prevent cross-region content leakage.
+            Feature work and production support on a Django storefront with Jinja2
+            server-rendered pages, including country and language switching in the request context
+            and region-aware cache keys that stop content leaking across regions.
           </p>
           <TechList items={["Python", "Django", "Jinja2", "Akinon / Omnitron", "REST APIs"]} className="mt-4" />
         </Reveal>

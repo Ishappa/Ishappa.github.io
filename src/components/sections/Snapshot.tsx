@@ -19,7 +19,7 @@ export function Snapshot() {
       number="01"
       label="Engineering Snapshot"
       title="What I build"
-      description="Production applications for global e-commerce brands — mobile first, then the web storefronts and the engineering behind both."
+      description="Production applications for global e-commerce brands. Mobile first, then the web storefronts and the engineering behind both."
       aside={<CurrentWorkCard />}
     >
       <Reveal className="mb-10 max-w-[46rem] space-y-4 sm:mb-12">

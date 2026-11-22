@@ -179,6 +179,35 @@ skill is listed anywhere on the site.
 - "Across **all** GCC storefronts" (Checkout.com) softened to "across GCC storefronts", because the
   storefront set changed and the claim was never stated for Whites.
 
+## Final audit, 2026-11-22 (resumes and site locked for applications)
+
+Removed or softened because they could not be backed with evidence in an interview:
+
+- **SEO ranking gains / organic traffic improvement**: removed everywhere. Only the measured
+  Lighthouse 65 → 90+ and the techniques used (SSR/ISR, code splitting, CDN images, render-blocking
+  removal) remain. "SEO-focused pages" on Koton describes the page type, not an outcome.
+- **~30% faster feature delivery** from the component library: removed. The 40+ shared components
+  stay. Restore the figure only if there is a source for it.
+- **"Zero critical production incidents"**: narrowed to "none of the releases I handled caused a
+  critical production incident", and no longer a headline metric (impact tile is now
+  "App submissions & releases").
+- **Outcome claims without numbers**: "improving release quality" (Crashlytics) and "improving
+  conversion from push clicks" (MoEngage) removed.
+- **AI PoC**: "hallucination prevention" → grounding answers in live data / reducing hallucination
+  risk. "Built and shipped" → "Built", always labelled a client proof of concept.
+- **Groq**: removed from AI/LLM skills. It came from the old PerfLens wording; the README says Claude.
+- **PerfLens on resumes** now matches the README-based site description (pre/post snapshots, diff,
+  PR/MR comments, Lighthouse CI + Hermes, GitLab/GitHub/Bitbucket). The old resume claims of
+  multi-run median aggregation, pinned throttling, tolerance bands and a threshold engine were
+  dropped because the README does not list them.
+- **AEM**: always called a proof of concept. "Integrating React/Next.js experiences with
+  AEM-managed content" on the live storefronts was removed, because the migration was not adopted.
+- **Django**: "large" and "owned production support" → "supported production".
+- **Java**: "comfortable taking a feature … through to a Java backend" removed; JWT and
+  Hibernate/JPA marked as coming from certification on the AEM Java resume as well.
+- **Duplicated certification bullets** in the "AI-Assisted Development" sections removed (the
+  certification is already in the summary and in Certifications).
+
 ## Explicitly NOT claimed anywhere on this site
 
 AWS · GCP · Azure · Docker · Kubernetes · Terraform · Jenkins · microservices · distributed systems ·

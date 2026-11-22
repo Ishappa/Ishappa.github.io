@@ -20,7 +20,7 @@ export function Impact() {
       label="Engineering Impact"
       tone="alt"
       title="Measured outcomes"
-      description="Numbers reported here are the ones recorded in my resume — performance, payments, reach, delivery and release quality."
+      description="Numbers reported here are the ones recorded in my resume: performance, payments, reach, shared components and releases."
     >
       <ul className="grid gap-px overflow-hidden rounded-sm border border-line bg-line sm:grid-cols-2">
         {impact.map((item, i) => {

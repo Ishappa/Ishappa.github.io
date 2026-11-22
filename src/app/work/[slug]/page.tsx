@@ -168,7 +168,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         ) : null}
 
         <p className="border-t border-line pt-8 text-[13px] leading-relaxed text-subtle">
-          Client and company work. This case study is limited to what my resume already states — no
+          Client and company work. This case study is limited to what my resume already states, with no
           internal architecture, credentials, repositories or business information are included.
         </p>
       </Container>

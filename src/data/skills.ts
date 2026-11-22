@@ -119,11 +119,11 @@ export const skills: SkillCategory[] = [
     name: "AI / LLM",
     tier: "supporting",
     items: [
-      "LLM API integration (Claude, Gemini, Groq)",
+      "LLM API integration (Claude, Gemini)",
       "Tool & function calling",
       "Prompt design",
       "Structured outputs",
-      "Grounding & hallucination prevention",
+      "Grounding answers in live data",
     ],
   },
   {

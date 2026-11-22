@@ -10,7 +10,7 @@ export function SelectedWork() {
       number="02"
       label="Selected Product Experience"
       title="Production work, mobile and web"
-      description="Client applications running in production for international retail brands across GCC markets. Every project below is client or company work — details are limited to what my resume already states."
+      description="Client applications running in production for international retail brands across GCC markets. Every project below is client or company work, and details are limited to what my resume already states."
     >
       <div className="space-y-6 sm:space-y-8">
         {featuredProjects.map((project, i) => (

@@ -5,36 +5,36 @@ export const impact: ImpactItem[] = [
     metric: "65 → 90+",
     label: "Lighthouse performance",
     detail:
-      "Raised performance scores across GCC storefronts with SSR/ISR, dynamic code splitting, CDN image delivery and elimination of render-blocking resources — directly improving organic traffic.",
+      "Raised Lighthouse performance scores on GCC storefronts using SSR/ISR, dynamic code splitting, CDN image delivery and removal of render-blocking resources.",
   },
   {
     metric: "20%",
     label: "Faster mobile cold start",
     detail:
-      "Reduced React Native app cold-start time through AsyncStorage caching, batched API calls and JavaScript bundle optimisation, measured via Firebase Performance Monitoring.",
+      "Cut React Native app cold-start time with AsyncStorage caching, batched API calls and JavaScript bundle optimisation, measured with Firebase Performance Monitoring.",
   },
   {
     metric: "1M+",
     label: "Monthly users reached",
     detail:
-      "High-traffic Next.js/React storefronts across GCC markets, plus cross-platform apps serving hundreds of thousands of active shoppers.",
+      "High-traffic Next.js/React storefronts across GCC markets, plus shopping apps used by hundreds of thousands of active shoppers.",
   },
   {
     metric: "Checkout.com",
     label: "Payment integration",
     detail:
-      "Built and shipped tokenisation, 3DS authentication and order-confirmation webhooks, enabling secure, PCI-compliant checkout across all GCC storefronts.",
+      "Built and shipped tokenisation, 3DS authentication and order-confirmation webhooks for secure, PCI-compliant checkout across GCC storefronts.",
   },
   {
-    metric: "40+ / ~30%",
-    label: "Component library, faster delivery",
+    metric: "40+",
+    label: "Shared UI components",
     detail:
-      "Designed a cross-project Tailwind CSS component library — cart slider, navigation, promotional widgets — adopted across all brand codebases, cutting feature delivery time by roughly 30%.",
+      "Built a shared Tailwind CSS component library, including the cart slider, navigation and promotional widgets, used across brand codebases.",
   },
   {
-    metric: "Zero",
-    label: "Critical production incidents",
+    metric: "iOS + Android",
+    label: "App submissions & releases",
     detail:
-      "Handled app submissions and releases for R&B, Whites and Koton GCC — Xcode and Gradle release builds, TestFlight and Play Console testing, App Store and Google Play submissions, review coordination and phased rollout. Web releases ship through Akinon ACC on a tag-based, zero-downtime flow: create and push a release tag, build it, then deploy it.",
+      "Handle App Store and Google Play submissions and releases for R&B, Whites and Koton GCC, from Xcode and Gradle release builds through testing, review and phased rollout. Web releases go out through Akinon ACC with a tag-based, zero-downtime flow: create and push a release tag, build it, then deploy it.",
   },
 ];

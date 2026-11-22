@@ -7,7 +7,7 @@ import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const description =
-  "Ishappa N is a Software Engineer in Bengaluru focused on mobile and frontend — React Native apps on the App Store and Play Store, and Next.js e-commerce storefronts serving 1M+ monthly users.";
+  "Ishappa N is a Software Engineer in Bengaluru focused on mobile and frontend: React Native apps on the App Store and Google Play, and Next.js e-commerce storefronts serving 1M+ monthly users.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

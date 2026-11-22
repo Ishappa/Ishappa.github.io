@@ -24,7 +24,7 @@ export const currentWork: {
   label: "Current project",
   name: "Whites",
   detail:
-    "Next.js storefront and React Native mobile app on the Akinon platform — live on the web, App Store and Google Play.",
+    "Next.js storefront and React Native mobile app on the Akinon platform, live on the web, App Store and Google Play.",
   tech: ["Next.js", "React Native", "TypeScript", "Akinon"],
   links: [
     { kind: "site", label: "whites.sa", href: "https://whites.sa" },

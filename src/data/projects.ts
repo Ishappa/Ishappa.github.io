@@ -13,15 +13,15 @@ export const projects: Project[] = [
     label: "Production / Client Project",
     brands: ["R&B", "Lulu GCC", "Whites", "Koton"],
     summary:
-      "React Native CLI shopping apps for GCC retail brands — built, submitted and released on the App Store and Google Play.",
+      "Shopping apps for GCC retail brands, built on React Native CLI and released through the App Store and Google Play.",
     product:
       "Customer-facing shopping apps for GCC retail brands, built on React Native CLI (bare workflow) with individual Expo Modules for specific native capabilities, and released on both iOS and Android.",
     challenge:
-      "Mobile-first revenue depended on startup speed, release quality and re-engagement — and every release had to clear App Store and Google Play review, across several brands and regions.",
+      "The apps needed fast startup, stable releases and working re-engagement, and every release had to clear App Store and Google Play review across several brands and regions.",
     contribution:
       "Built app features and navigation flows, cut cold-start time, instrumented analytics and crash reporting, implemented MoEngage push and deep linking, and handled app submissions and releases for R&B, Whites and Koton GCC.",
     result:
-      "R&B, Lulu GCC and Whites live on both stores, Koton GCC submitted and in review; hundreds of thousands of active shoppers, 20% faster cold start, zero critical production incidents.",
+      "R&B, Lulu GCC and Whites are live on both stores and Koton GCC is submitted and in review. The apps serve hundreds of thousands of active shoppers, and cold start is 20% faster.",
     tech: [
       "React Native CLI",
       "Expo Modules",
@@ -73,13 +73,13 @@ export const projects: Project[] = [
         href: "https://play.google.com/store/apps/details?id=net.whites",
       },
     ],
-    linksNote: "Koton GCC has been submitted to the App Store and Google Play and is in review — not public yet.",
+    linksNote: "Koton GCC has been submitted to the App Store and Google Play and is in review, so it is not public yet.",
     caseStudy: {
       overview:
-        "Shopping apps for R&B, Lulu GCC, Whites and Koton, built on React Native CLI (bare workflow) — not the Expo-managed workflow — with individual Expo Modules for specific native capabilities. I handle app submissions and releases for R&B, Whites and Koton GCC. The Koton app is live for the Turkey region, and the same codebase, extended with region-specific backend integrations for GCC, has been submitted to both stores and is in review.",
+        "Shopping apps for R&B, Lulu GCC, Whites and Koton, built on React Native CLI (bare workflow) with individual Expo Modules for specific native capabilities. The Expo-managed workflow is not used. I handle app submissions and releases for R&B, Whites and Koton GCC. The Koton app is live for the Turkey region, and the same codebase, extended with region-specific backend integrations for GCC, has been submitted to both stores and is in review.",
       context:
-        "These are customer-facing retail apps for brands operating across GCC markets. They serve hundreds of thousands of active shoppers and carry mobile-first revenue for the brands behind them.",
-      role: "Software Engineer at Codilar Technologies — feature development, performance work, analytics and engagement integration, and app submission and release activities for R&B, Whites and Koton GCC.",
+        "These are customer-facing retail apps for brands operating across GCC markets. Together they serve hundreds of thousands of active shoppers.",
+      role: "Software Engineer at Codilar Technologies. Feature development, performance work, analytics and engagement integration, and app submission and release activities for R&B, Whites and Koton GCC.",
       stack: [
         {
           group: "Mobile",
@@ -118,37 +118,37 @@ export const projects: Project[] = [
         {
           title: "Cold-start performance",
           detail:
-            "Reduced app cold-start time by 20% through AsyncStorage caching, batched API calls and JavaScript bundle optimisation, measured via Firebase Performance Monitoring.",
+            "Cut app cold-start time by 20% with AsyncStorage caching, batched API calls and JavaScript bundle optimisation, measured with Firebase Performance Monitoring.",
         },
         {
           title: "Analytics and crash reporting",
           detail:
-            "Integrated Firebase Analytics for funnel tracking and Firebase Crashlytics for crash reporting, improving release quality.",
+            "Integrated Firebase Analytics for funnel tracking and Firebase Crashlytics for crash reporting, so problems in a release show up quickly.",
         },
         {
           title: "Engagement and deep linking",
           detail:
-            "Implemented MoEngage push campaigns, in-app messaging and segmentation, with deep-linked promotional entry points delivered through rebuilt React Navigation flows — improving conversion from push clicks.",
+            "Implemented MoEngage push campaigns, in-app messaging and segmentation, with deep-linked promotions handled through rebuilt React Navigation flows.",
         },
         {
           title: "React Native CLI with Expo Modules",
           detail:
-            "The apps run on React Native CLI (bare workflow) with full control of the native iOS and Android projects. Individual Expo Modules are added only where a specific native capability needs one — the Expo-managed workflow is not used.",
+            "The apps run on React Native CLI (bare workflow) with full control of the native iOS and Android projects. Individual Expo Modules are added only where a specific native capability needs one. The Expo-managed workflow is not used.",
         },
         {
           title: "App submission and release",
           detail:
-            "Handle app submission and release activities for R&B, Whites and Koton GCC: iOS and Android release builds in Xcode and Gradle, TestFlight and Play Console testing, App Store and Google Play submissions, review coordination and phased rollout, as applicable to each app.",
+            "Handle App Store and Google Play submissions and releases for R&B, Whites and Koton GCC. That includes iOS and Android release builds in Xcode and Gradle, TestFlight and Play Console testing, review coordination and phased rollout, as applicable to each app. None of the releases I handled caused a critical production incident.",
         },
         {
           title: "Release status",
           detail:
-            "Live on the App Store and Google Play: R&B, Lulu GCC and Whites. Live for the Turkey region: Koton. Submitted to both stores and in review: Koton GCC.",
+            "R&B, Lulu GCC and Whites are live on the App Store and Google Play. Koton is live in Turkey. Koton GCC has been submitted to both stores and is in review.",
         },
         {
           title: "Multi-region rollout",
           detail:
-            "Built the Koton app live for the Turkey region, then extended the same codebase with region-specific backend integrations for GCC and took it through store submission.",
+            "Built the Koton app that is live in Turkey, then extended the same codebase with region-specific backend integrations for GCC and took it through store submission.",
         },
       ],
       impact: [
@@ -156,7 +156,7 @@ export const projects: Project[] = [
         "Koton GCC submitted to both stores, in review",
         "Hundreds of thousands of active shoppers",
         "20% faster app cold start",
-        "Zero critical production incidents",
+        "No critical production incidents from releases I handled",
       ],
     },
   },
@@ -169,13 +169,13 @@ export const projects: Project[] = [
     summary:
       "High-traffic Next.js/React storefronts for international retail brands across GCC markets, serving 1M+ monthly users.",
     product:
-      "Customer-facing e-commerce storefronts for international retail brands operating across GCC markets.",
+      "Customer-facing e-commerce storefronts for international retail brands selling across GCC markets.",
     challenge:
-      "High-traffic retail sites needed Core Web Vitals and SEO gains, PCI-compliant payments, and a consistent component layer across separate brand codebases.",
+      "High-traffic retail sites needed better performance scores, PCI-compliant payments and a consistent component layer across separate brand codebases.",
     contribution:
-      "Built features, payment integration and performance work across live storefronts — the Checkout.com integration, Lighthouse 65 → 90+, the shared Tailwind component library, cart and checkout state, and GTM instrumentation.",
+      "Feature development, payment integration and performance work on live storefronts, including the Checkout.com integration, Lighthouse 65 → 90+, the shared Tailwind component library, cart and checkout state, and GTM tracking.",
     result:
-      "1M+ monthly users served, Lighthouse 65 → 90+, PCI-compliant checkout across GCC storefronts, and ~30% faster feature delivery.",
+      "1M+ monthly users served, Lighthouse 65 → 90+, PCI-compliant checkout across GCC storefronts, and a 40+ component library shared across brands.",
     tech: [
       "Next.js",
       "React.js",
@@ -196,10 +196,10 @@ export const projects: Project[] = [
     ],
     caseStudy: {
       overview:
-        "Feature development, payments and performance work across high-traffic Next.js/React storefronts — R&B, Lulu GCC and Whites — serving 1M+ monthly users across GCC markets, delivering measurable Core Web Vitals improvements and SEO ranking gains for international retail brands.",
+        "Feature development, payments and performance work on high-traffic Next.js/React storefronts for R&B, Lulu GCC and Whites, serving 1M+ monthly users across GCC markets.",
       context:
-        "International retail brands selling across GCC markets, where organic traffic and checkout reliability directly drive revenue. Separate brand codebases shared a common component and state foundation.",
-      role: "Software Engineer at Codilar Technologies — storefront engineering, performance, payments, shared component library, state architecture and analytics instrumentation.",
+        "International retail brands selling across GCC markets, where page speed and checkout reliability matter. Separate brand codebases shared a common component and state foundation.",
+      role: "Software Engineer at Codilar Technologies. Storefront engineering, performance, payments, shared component library, state architecture and analytics instrumentation.",
       stack: [
         {
           group: "Frontend",
@@ -222,47 +222,47 @@ export const projects: Project[] = [
       ],
       engineeringWork: [
         {
-          title: "Core Web Vitals and rendering strategy",
+          title: "Performance and rendering strategy",
           detail:
-            "Boosted Lighthouse performance scores from 65 to 90+ by implementing SSR/ISR, dynamic code splitting, CDN image delivery and elimination of render-blocking resources — directly improving organic traffic.",
+            "Raised Lighthouse performance scores from 65 to 90+ using SSR/ISR, dynamic code splitting, CDN image delivery and removal of render-blocking resources.",
         },
         {
           title: "Checkout.com payment integration",
           detail:
-            "Built and shipped the payment gateway integration — tokenisation, 3DS authentication and order-confirmation webhooks — enabling secure, PCI-compliant checkout across GCC storefronts.",
+            "Built and shipped the payment gateway integration (tokenisation, 3DS authentication and order-confirmation webhooks) for secure, PCI-compliant checkout across GCC storefronts.",
         },
         {
           title: "Cross-project component library",
           detail:
-            "Designed a Tailwind CSS component library of 40+ components including cart slider, navigation and promotional widgets, adopted across all brand codebases and cutting feature delivery time by ~30%.",
+            "Built a shared Tailwind CSS library of 40+ components, including the cart slider, navigation and promotional widgets, used across brand codebases.",
         },
         {
           title: "Cart and checkout state architecture",
           detail:
-            "Architected Redux Toolkit and Context API state for cart, checkout and wishlist flows across desktop and mobile web.",
+            "Set up Redux Toolkit and Context API state for cart, checkout and wishlist flows across desktop and mobile web.",
         },
         {
           title: "Funnel instrumentation",
           detail:
-            "Instrumented the full e-commerce funnel with GTM data-layer events — impressions, add-to-cart, checkout steps and purchases — for accurate conversion attribution.",
+            "Added GTM data-layer events across the funnel (impressions, add-to-cart, checkout steps and purchases) for conversion attribution.",
         },
         {
           title: "Release workflow",
           detail:
-            "Contributed to CI/CD and PR review workflows via Akinon ACC, shipping through a tag-based, zero-downtime deployment flow: create and push a release tag, build the tag, then deploy it.",
+            "Contributed to CI/CD and PR reviews through Akinon ACC, which releases through a tag-based, zero-downtime deployment flow: create and push a release tag, build the tag, then deploy it.",
         },
       ],
       impact: [
         "1M+ monthly users across GCC storefronts",
         "Lighthouse performance 65 → 90+",
         "PCI-compliant checkout across GCC storefronts",
-        "~30% faster feature delivery from the shared component library",
+        "40+ shared components used across brand codebases",
       ],
     },
   },
   {
     slug: "koton-multi-region-platform",
-    name: "Koton — Multi-Region E-Commerce Platform",
+    name: "Koton Multi-Region E-Commerce Platform",
     kind: "production",
     label: "Production / Client Project",
     brands: ["Koton"],
@@ -271,9 +271,9 @@ export const projects: Project[] = [
     product:
       "A multi-region e-commerce platform serving different countries and languages from one production Django storefront, alongside the React Native app.",
     challenge:
-      "Locale and country are independent axes — currency, payment methods, availability, content and RTL all vary — and cached responses must never leak content across regions.",
+      "Locale and country vary independently, and so do currency, payment methods, availability, content and RTL. Cached responses must never leak content across regions.",
     contribution:
-      "Built country and language switching resolved into request context with correct cache keys, implemented payment integration and session management across storefront and app contexts, and owned production support.",
+      "Built country and language switching resolved into request context with correct cache keys, implemented payment integration and session management across storefront and app, and supported production.",
     result:
       "Region-correct storefront behaviour on live multi-region traffic, with platform upgrades and security patches kept safe to apply.",
     tech: ["Python", "Django", "Jinja2", "Akinon / Omnitron", "React Native", "REST APIs"],
@@ -281,10 +281,10 @@ export const projects: Project[] = [
     links: [{ kind: "site", label: "koton.ae", href: "https://koton.ae" }],
     caseStudy: {
       overview:
-        "Feature delivery and production support on a large Django storefront with Jinja2 server-rendered templates for SEO-first pages, serving multiple countries and languages, alongside the React Native app for the same brand.",
+        "Feature delivery and production support on a Django storefront with Jinja2 server-rendered templates for SEO-focused pages, serving multiple countries and languages, alongside the React Native app for the same brand.",
       context:
         "A live multi-region commerce platform where locale, country, currency, payment methods and content availability differ per market, including right-to-left languages.",
-      role: "Software Engineer at Codilar Technologies — backend feature work on the Django storefront, payment and session integration, and production support on live traffic.",
+      role: "Software Engineer at Codilar Technologies. Backend feature work on the Django storefront, payment and session integration, and production support on live traffic.",
       stack: [
         { group: "Backend", items: ["Python", "Django", "Jinja2", "REST APIs"] },
         { group: "Commerce platform", items: ["Akinon / Omnitron"] },
@@ -294,17 +294,17 @@ export const projects: Project[] = [
         {
           title: "Upgrade-safe platform extension",
           detail:
-            "Extended the vendor commerce platform through middleware and class-level overrides rather than core modifications — keeping upgrades and security patches safe to apply.",
+            "Extended the vendor commerce platform with middleware and class-level overrides instead of modifying core code, so upgrades and security patches stay safe to apply.",
         },
         {
           title: "Country and language switching",
           detail:
-            "Treated locale and country as independent axes resolved into request context — currency, payment methods, availability, content and RTL handling.",
+            "Treated locale and country as separate values in the request context, covering currency, payment methods, availability, content and RTL.",
         },
         {
-          title: "SEO-first server rendering",
+          title: "Server-rendered pages for SEO",
           detail:
-            "Delivered features on Jinja2 server-rendered templates for SEO-first pages within the production Django storefront.",
+            "Delivered features on Jinja2 server-rendered templates for SEO-focused pages within the production Django storefront.",
         },
         {
           title: "Payments and sessions",
@@ -314,14 +314,14 @@ export const projects: Project[] = [
         {
           title: "Production support",
           detail:
-            "Owned production support on live multi-region traffic: API integration, performance work and root-cause bug fixing.",
+            "Supported production on live multi-region traffic with API integration, performance work and root-cause bug fixes.",
         },
       ],
       challenges: [
         {
           title: "Cross-region content leakage",
           detail:
-            "Caching a multi-region storefront risks serving one market's content, currency or payment methods to another. Addressed through cache-key correctness as part of the country and language switching design.",
+            "Caching a multi-region storefront risks serving one market's content, currency or payment methods to another. Handled by making cache keys region-aware as part of the country and language switching design.",
         },
         {
           title: "Keeping the platform upgradable",
@@ -339,13 +339,13 @@ export const projects: Project[] = [
     summary:
       "An LLM tool-calling backend on FastAPI letting business users query live enterprise data in natural language.",
     product:
-      "A backend that lets business users retrieve live enterprise data in natural language — for example “how many approved COD orders today” — instead of navigating dashboards.",
+      "A backend that lets business users retrieve live enterprise data in plain language, for example “how many approved COD orders today”, instead of navigating dashboards.",
     challenge:
-      "An LLM answering questions about business data must never estimate a figure, and its output has to be treated as untrusted input while latency and token cost stay bounded.",
+      "An LLM answering questions about business data should not estimate figures, and its output has to be treated as untrusted input while latency and token cost stay bounded.",
     contribution:
       "Built the complete backend: the tool-calling loop, Pydantic-generated tool schemas, strict validation of model output, a per-system connector layer, and grounding of every figure in a live tool result.",
     result:
-      "Delivered and demonstrated as the proof of concept the client used to approve a broader AI initiative.",
+      "Demonstrated to the client, who used this proof of concept to approve a broader AI initiative.",
     tech: [
       "Python",
       "FastAPI",
@@ -362,7 +362,7 @@ export const projects: Project[] = [
       overview:
         "A complete LLM tool-calling backend enabling business users to retrieve live enterprise data in natural language, delivered and demonstrated as the proof of concept the client used to evaluate the approach before committing to the project.",
       context:
-        "Business users needed answers from product, order and Google Analytics 4 data without navigating dashboards — with figures that could be trusted.",
+        "Business users needed answers from product, order and Google Analytics 4 data without navigating dashboards, with figures they could trust.",
       role: "Built the complete backend independently.",
       stack: [
         { group: "Backend", items: ["Python", "FastAPI", "Pydantic", "async HTTPX / asyncio"] },
@@ -386,17 +386,17 @@ export const projects: Project[] = [
         {
           title: "Per-system connector layer",
           detail:
-            "Architected a connector per enterprise system — Omnitron commerce APIs and Google Analytics 4 — isolating authentication, retries, response mapping and server-side aggregation, running independent tool calls concurrently over a pooled async HTTP client.",
+            "Built a connector for each enterprise system (Omnitron commerce APIs and Google Analytics 4) that isolates authentication, retries, response mapping and server-side aggregation, running independent tool calls concurrently over a pooled async HTTP client.",
         },
         {
-          title: "Hallucination prevention",
+          title: "Grounding answers in live data",
           detail:
             "Grounded every figure in a live tool result, reported unavailability instead of estimating when an upstream failed, and surfaced the date range, timezone and filters behind each answer.",
         },
       ],
       challenges: [
         {
-          title: "Preventing hallucinated business figures",
+          title: "Reducing hallucinated business figures",
           detail:
             "A model that guesses a number is worse than one that refuses. Every figure is grounded in a live tool result, unavailability is reported rather than estimated, and the date range, timezone and filters behind each answer are surfaced with it.",
         },
@@ -410,7 +410,7 @@ export const projects: Project[] = [
     kind: "independent",
     label: "Independent Project",
     summary:
-      "A CLI that captures before/after performance snapshots on every pull request, diffs them, and posts the regression report as a PR comment — for both web and React Native.",
+      "A CLI that captures before/after performance snapshots on every pull request, diffs them, and posts the regression report as a PR comment, for both web and React Native.",
     product:
       "A pre/post performance tool: every pull request gets a snapshot before the change, a snapshot after it, a diff report, and an automatic PR/MR comment showing what regressed.",
     challenge:
@@ -418,7 +418,7 @@ export const projects: Project[] = [
     contribution:
       "Built the CLI, the snapshot and diff engine, and CI templates for all three platforms, structured as an installable npm package with a typed core (Zod schemas) as the single source of truth.",
     result:
-      "A working CLI with snapshot capture, diffing and automatic PR/MR comments shipped across GitLab, GitHub and Bitbucket; AI-based root-cause analysis is the next phase in development.",
+      "A working CLI with snapshot capture, diffing and automatic PR/MR comments working across GitLab, GitHub and Bitbucket. AI-based root-cause analysis is the next phase and is in development.",
     tech: [
       "Node.js",
       "TypeScript",
@@ -435,8 +435,8 @@ export const projects: Project[] = [
     linksNote: "Source not yet public.",
     caseStudy: {
       overview:
-        "A CLI that automatically captures a performance snapshot before and after a code change, diffs the two, and posts the regression report directly as a comment on the pull or merge request — for React/Next.js (via Lighthouse CI) and React Native (via the Hermes profiler), across GitLab, GitHub and Bitbucket.",
-      role: "Independent project — designed and built end to end.",
+        "A CLI that automatically captures a performance snapshot before and after a code change, diffs the two, and posts the regression report directly as a comment on the pull or merge request. It works for React/Next.js (via Lighthouse CI) and React Native (via the Hermes profiler), across GitLab, GitHub and Bitbucket.",
+      role: "Independent project, designed and built end to end.",
       stack: [
         { group: "Core", items: ["Node.js", "TypeScript", "pnpm workspaces", "Zod (shared schemas)"] },
         { group: "Web profiling", items: ["Lighthouse CI"] },
@@ -473,7 +473,7 @@ export const projects: Project[] = [
         {
           title: "Three CI platforms, three auth models",
           detail:
-            "GitLab, GitHub and Bitbucket each authenticate and post PR/MR comments differently — GitLab via CI_JOB_TOKEN or a personal access token, GitHub via an auto-provided token, Bitbucket via an app password. The CLI ships a working template and setup steps for each rather than a one-size-fits-all integration.",
+            "GitLab, GitHub and Bitbucket each authenticate and post PR/MR comments differently. GitLab uses CI_JOB_TOKEN or a personal access token, GitHub uses its auto-provided token and Bitbucket uses an app password. The CLI ships a working template and setup steps for each rather than a one-size-fits-all integration.",
         },
       ],
       impact: [
