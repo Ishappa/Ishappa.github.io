@@ -10,8 +10,6 @@ import type { ProjectLink } from "@/types/content";
 export const brandsWorkedOn: { name: string; href?: string }[] = [
   { name: "R&B", href: "https://randbfashion.com/en_ae" },
   { name: "Lulu GCC", href: "https://gcc.luluhypermarket.com/" },
-  { name: "Clarks" },
-  { name: "Ooka" },
   { name: "Koton", href: "https://koton.ae" },
   { name: "Whites", href: "https://whites.sa" },
 ];

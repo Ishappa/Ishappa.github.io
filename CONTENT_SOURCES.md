@@ -5,9 +5,14 @@ This file is the audit trail. If a claim isn't listed here, it shouldn't be on t
 
 **Sources**
 
-- **FE** — `Ishappa_FE_Resume.pdf`
-- **AI** — `Ishappa_FullStack_AI_Resume.pdf`
-- **JV** — `Ishappa_FullStack_Java_Resume.pdf`
+- **FE** — `resumes/current/Ishappa_FE_Resume.pdf`
+- **AI** — `resumes/current/Ishappa_FullStack_AI_Resume.pdf`
+- **JV** — `resumes/current/Ishappa_FullStack_Java_Resume.pdf`
+
+All resume variants (including the two AEM ones) are generated from one file,
+`resumes/source/build.py`. Pre-November-2026 versions are kept in `resumes/old/`.
+The whole `resumes/` folder is git-ignored; only `public/Ishappa_N_Resume.pdf`
+(a copy of the FE variant) is published.
 - **USER** — stated directly by Ishappa in conversation (see the bottom of this file)
 
 ---
@@ -26,7 +31,9 @@ This file is the audit trail. If a claim isn't listed here, it shouldn't be on t
 
 | Claim | Source |
 | --- | --- |
-| Cross-platform shopping apps (iOS + Android) on App Store and Play Store — R&B, Lulu GCC, Koton | FE, AI, JV |
+| React Native CLI (bare workflow) shopping apps (iOS + Android) — R&B, Lulu GCC, Whites, Koton | FE, AI, JV, USER 2026-11 |
+| Individual Expo Modules for specific native capabilities; **not** Expo-managed, no EAS | USER 2026-11 |
+| App submission and release activities for R&B, Whites and Koton GCC | USER 2026-11 |
 | Hundreds of thousands of active shoppers | FE, AI |
 | 20% cold-start reduction via AsyncStorage caching, batched API calls, JS bundle optimisation | FE, AI, JV |
 | Measured via Firebase Performance Monitoring | FE, AI |
@@ -34,7 +41,8 @@ This file is the audit trail. If a claim isn't listed here, it shouldn't be on t
 | MoEngage push, in-app messaging, segmentation, deep-linked entry points, rebuilt React Navigation flows | FE, AI |
 | Release pipeline: Xcode/Gradle, TestFlight/Play Console, review coordination, phased rollout | FE, AI, JV |
 | Zero critical production incidents | FE, AI, JV |
-| Koton live for Turkey region; GCC integrations in UAT | FE, AI |
+| Koton live for Turkey region; Koton GCC submitted to both stores, in review | FE, AI, USER 2026-11 |
+| Live on both stores: R&B, Lulu GCC, Whites | USER (store URLs below) |
 
 > **Note on a resume inconsistency.** FE/JV say *"Shipped 2 cross-platform shopping apps"* while the
 > section heading lists three brands. The site states the brands and omits the count, rather than
@@ -44,7 +52,7 @@ This file is the audit trail. If a claim isn't listed here, it shouldn't be on t
 
 | Claim | Source |
 | --- | --- |
-| Work across 4 high-traffic Next.js/React storefronts — R&B, Lulu GCC, Clarks, Ooka | FE, AI, JV |
+| Work across high-traffic Next.js/React storefronts — R&B, Lulu GCC, Whites (no count stated) | FE, AI, JV, USER 2026-11 |
 | 1M+ monthly users across GCC markets | FE, AI, JV |
 | Core Web Vitals improvements and SEO ranking gains | FE, AI |
 | Lighthouse 65 → 90+ via SSR/ISR, dynamic code splitting, CDN image delivery, removing render-blocking resources | FE, AI, JV |
@@ -53,7 +61,6 @@ This file is the audit trail. If a claim isn't listed here, it shouldn't be on t
 | Redux Toolkit + Context API for cart, checkout, wishlist, desktop and mobile web | FE, AI |
 | GTM data-layer events: impressions, add-to-cart, checkout steps, purchases | FE, AI |
 | CI/CD and PR review workflows via Akinon ACC | FE, AI |
-| Ooka rebuilt/stabilised on React/Next.js after AEM PoC evaluated | FE, AI, JV |
 
 ## Backend (section 06; case study `koton-multi-region-platform`)
 
@@ -65,7 +72,7 @@ This file is the audit trail. If a claim isn't listed here, it shouldn't be on t
 | Cache-key correctness preventing cross-region content leakage | AI |
 | Payment integration and session management across storefront and app | AI |
 | Production support: API integration, performance, root-cause bug fixing on live multi-region traffic | AI |
-| Ooka AEM migration PoC in Java — custom components, Sling Servlets, OSGi, Core Components, HTL | JV, FE |
+| AEM migration PoC in Java (client not named) — custom components, Sling Servlets, OSGi, Core Components, HTL | JV, FE |
 | cWarmer: *basic backend functionality*, dashboard REST APIs, cache-status tracking, warmer-bot configuration | JV |
 
 ## AI / LLM (section 07; case studies `ai-enterprise-data-assistant`, `perflens`)
@@ -154,12 +161,30 @@ skill is listed anywhere on the site.
 
 ---
 
+## Stated by Ishappa, 2026-11-22
+
+- **Brands are R&B, Lulu GCC, Whites and Koton.** Clarks is removed from the site and from every
+  resume. The Ooka name is removed from the site and from the FE / Full Stack resumes; the
+  Java AEM proof-of-concept is still described there without naming the client. The two AEM
+  resumes keep their Ooka/AEM projects unchanged (Clarks → Whites only).
+- **Mobile stack:** React Native CLI (bare workflow) with individual Expo Modules for specific
+  native capabilities. Not the Expo-managed workflow, no EAS.
+- **Release ownership:** app submission/release activities for R&B GCC, Whites.sa and Koton GCC —
+  iOS/Android build and release workflows, App Store and Google Play submissions, review
+  coordination and release activities, as applicable. Lulu GCC is listed as an app worked on,
+  without a submission claim.
+- **Koton GCC status:** submitted to both stores, in review (supersedes "in UAT").
+- **Do not claim:** CI/CD pipeline automation for mobile, Expo-managed/EAS, Swift/Kotlin, mentoring.
+  "Release pipeline" wording was replaced with "release activities / submissions" for that reason.
+- "Across **all** GCC storefronts" (Checkout.com) softened to "across GCC storefronts", because the
+  storefront set changed and the claim was never stated for Whites.
+
 ## Explicitly NOT claimed anywhere on this site
 
 AWS · GCP · Azure · Docker · Kubernetes · Terraform · Jenkins · microservices · distributed systems ·
 system design · GraphQL · WebSockets · Kafka · Redis · MongoDB · Jest · React Testing Library ·
 Cypress · Playwright · TDD · test coverage · Storybook · Figma · Vue · Angular · Svelte · Flutter ·
-Swift · Kotlin · native iOS/Android · Stripe · Razorpay · team leadership · mentoring · team size ·
+Swift · Kotlin · native iOS/Android · Expo-managed workflow · EAS · Stripe · Razorpay · team leadership · mentoring · team size ·
 open-source contributions · repository stars · blog posts · talks · awards · testimonials ·
 revenue figures · conversion-rate lifts · uptime/SLA numbers · any GitHub repo, demo, App Store or
 Play Store URL · profile photo.

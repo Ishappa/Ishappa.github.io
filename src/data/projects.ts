@@ -11,19 +11,20 @@ export const projects: Project[] = [
     name: "React Native Shopping Apps",
     kind: "production",
     label: "Production / Client Project",
-    brands: ["R&B", "Lulu GCC", "Koton"],
+    brands: ["R&B", "Lulu GCC", "Whites", "Koton"],
     summary:
-      "Cross-platform iOS and Android shopping apps for GCC retail brands, shipped to the App Store and Play Store.",
+      "React Native CLI shopping apps for GCC retail brands — built, submitted and released on the App Store and Google Play.",
     product:
-      "Customer-facing shopping apps for GCC retail brands, built once in React Native and released on both iOS and Android.",
+      "Customer-facing shopping apps for GCC retail brands, built on React Native CLI (bare workflow) with individual Expo Modules for specific native capabilities, and released on both iOS and Android.",
     challenge:
-      "Mobile-first revenue depended on startup speed, release quality and re-engagement — all owned in production, across two app stores and multiple regions.",
+      "Mobile-first revenue depended on startup speed, release quality and re-engagement — and every release had to clear App Store and Google Play review, across several brands and regions.",
     contribution:
-      "Built app features and navigation flows, cut cold-start time, instrumented analytics and crash reporting, implemented MoEngage push and deep linking, and owned the release pipeline end to end.",
+      "Built app features and navigation flows, cut cold-start time, instrumented analytics and crash reporting, implemented MoEngage push and deep linking, and handled app submissions and releases for R&B, Whites and Koton GCC.",
     result:
-      "Live on the App Store and Play Store serving hundreds of thousands of active shoppers, 20% faster cold start, zero critical production incidents.",
+      "R&B, Lulu GCC and Whites live on both stores, Koton GCC submitted and in review; hundreds of thousands of active shoppers, 20% faster cold start, zero critical production incidents.",
     tech: [
-      "React Native",
+      "React Native CLI",
+      "Expo Modules",
       "iOS",
       "Android",
       "React Navigation",
@@ -59,19 +60,33 @@ export const projects: Project[] = [
         label: "Google Play",
         href: "https://play.google.com/store/apps/details?id=com.akinon.lulushopping",
       },
+      {
+        kind: "ios",
+        group: "Whites",
+        label: "App Store",
+        href: "https://apps.apple.com/sa/app/%D9%88%D8%A7%D9%8A%D8%AA%D8%B3-whites/id1618189900",
+      },
+      {
+        kind: "android",
+        group: "Whites",
+        label: "Google Play",
+        href: "https://play.google.com/store/apps/details?id=net.whites",
+      },
     ],
-    linksNote: "Koton for the GCC region is going through store submission and is not public yet.",
+    linksNote: "Koton GCC has been submitted to the App Store and Google Play and is in review — not public yet.",
     caseStudy: {
       overview:
-        "Cross-platform shopping apps for R&B, Lulu GCC and Koton, built in React Native and released to the App Store and Play Store. The Koton app is live for the Turkey region, and the same codebase is being extended with region-specific backend integrations for GCC.",
+        "Shopping apps for R&B, Lulu GCC, Whites and Koton, built on React Native CLI (bare workflow) — not the Expo-managed workflow — with individual Expo Modules for specific native capabilities. I handle app submissions and releases for R&B, Whites and Koton GCC. The Koton app is live for the Turkey region, and the same codebase, extended with region-specific backend integrations for GCC, has been submitted to both stores and is in review.",
       context:
         "These are customer-facing retail apps for brands operating across GCC markets. They serve hundreds of thousands of active shoppers and carry mobile-first revenue for the brands behind them.",
-      role: "Software Engineer at Codilar Technologies — feature development, performance work, analytics and engagement integration, and ownership of the end-to-end release pipeline.",
+      role: "Software Engineer at Codilar Technologies — feature development, performance work, analytics and engagement integration, and app submission and release activities for R&B, Whites and Koton GCC.",
       stack: [
         {
           group: "Mobile",
           items: [
-            "React Native (iOS & Android)",
+            "React Native CLI (bare workflow)",
+            "Expo Modules (not Expo-managed)",
+            "iOS & Android",
             "React Navigation",
             "AsyncStorage",
             "Deep Linking",
@@ -89,7 +104,14 @@ export const projects: Project[] = [
         },
         {
           group: "Release",
-          items: ["Xcode", "Android Studio", "Gradle", "TestFlight", "Play Console"],
+          items: [
+            "Xcode",
+            "Android Studio",
+            "Gradle",
+            "TestFlight",
+            "App Store Connect",
+            "Google Play Console",
+          ],
         },
       ],
       engineeringWork: [
@@ -109,18 +131,29 @@ export const projects: Project[] = [
             "Implemented MoEngage push campaigns, in-app messaging and segmentation, with deep-linked promotional entry points delivered through rebuilt React Navigation flows — improving conversion from push clicks.",
         },
         {
-          title: "Release ownership",
+          title: "React Native CLI with Expo Modules",
           detail:
-            "Owned the end-to-end release pipeline: Xcode and Gradle builds, TestFlight and Play Console staging, app review coordination, and phased rollout.",
+            "The apps run on React Native CLI (bare workflow) with full control of the native iOS and Android projects. Individual Expo Modules are added only where a specific native capability needs one — the Expo-managed workflow is not used.",
+        },
+        {
+          title: "App submission and release",
+          detail:
+            "Handle app submission and release activities for R&B, Whites and Koton GCC: iOS and Android release builds in Xcode and Gradle, TestFlight and Play Console testing, App Store and Google Play submissions, review coordination and phased rollout, as applicable to each app.",
+        },
+        {
+          title: "Release status",
+          detail:
+            "Live on the App Store and Google Play: R&B, Lulu GCC and Whites. Live for the Turkey region: Koton. Submitted to both stores and in review: Koton GCC.",
         },
         {
           title: "Multi-region rollout",
           detail:
-            "Built the Koton app live for the Turkey region, and is extending the same codebase with region-specific backend integrations for GCC — currently in UAT.",
+            "Built the Koton app live for the Turkey region, then extended the same codebase with region-specific backend integrations for GCC and took it through store submission.",
         },
       ],
       impact: [
-        "Apps live on the App Store and Play Store",
+        "R&B, Lulu GCC and Whites live on the App Store and Google Play",
+        "Koton GCC submitted to both stores, in review",
         "Hundreds of thousands of active shoppers",
         "20% faster app cold start",
         "Zero critical production incidents",
@@ -132,17 +165,17 @@ export const projects: Project[] = [
     name: "Next.js E-Commerce Storefronts",
     kind: "production",
     label: "Production / Client Project",
-    brands: ["R&B", "Lulu GCC", "Clarks", "Ooka"],
+    brands: ["R&B", "Lulu GCC", "Whites"],
     summary:
-      "Four high-traffic Next.js/React storefronts for international retail brands across GCC markets, serving 1M+ monthly users.",
+      "High-traffic Next.js/React storefronts for international retail brands across GCC markets, serving 1M+ monthly users.",
     product:
-      "Four customer-facing e-commerce storefronts for international retail brands operating across GCC markets.",
+      "Customer-facing e-commerce storefronts for international retail brands operating across GCC markets.",
     challenge:
-      "High-traffic retail sites needed Core Web Vitals and SEO gains, PCI-compliant payments, and a consistent component layer across four separate brand codebases.",
+      "High-traffic retail sites needed Core Web Vitals and SEO gains, PCI-compliant payments, and a consistent component layer across separate brand codebases.",
     contribution:
-      "Built features, payment integration and performance work across four live storefronts — the Checkout.com integration, Lighthouse 65 → 90+, the shared Tailwind component library, cart and checkout state, and GTM instrumentation.",
+      "Built features, payment integration and performance work across live storefronts — the Checkout.com integration, Lighthouse 65 → 90+, the shared Tailwind component library, cart and checkout state, and GTM instrumentation.",
     result:
-      "1M+ monthly users served, Lighthouse 65 → 90+, PCI-compliant checkout across all GCC storefronts, and ~30% faster feature delivery.",
+      "1M+ monthly users served, Lighthouse 65 → 90+, PCI-compliant checkout across GCC storefronts, and ~30% faster feature delivery.",
     tech: [
       "Next.js",
       "React.js",
@@ -159,12 +192,13 @@ export const projects: Project[] = [
     links: [
       { kind: "site", label: "randbfashion.com", href: "https://randbfashion.com/en_ae" },
       { kind: "site", label: "gcc.luluhypermarket.com", href: "https://gcc.luluhypermarket.com/" },
+      { kind: "site", label: "whites.sa", href: "https://whites.sa" },
     ],
     caseStudy: {
       overview:
-        "Feature development, payments and performance work across four high-traffic Next.js/React storefronts — R&B, Lulu GCC, Clarks and Ooka — serving 1M+ monthly users across GCC markets, delivering measurable Core Web Vitals improvements and SEO ranking gains for international retail brands.",
+        "Feature development, payments and performance work across high-traffic Next.js/React storefronts — R&B, Lulu GCC and Whites — serving 1M+ monthly users across GCC markets, delivering measurable Core Web Vitals improvements and SEO ranking gains for international retail brands.",
       context:
-        "International retail brands selling across GCC markets, where organic traffic and checkout reliability directly drive revenue. Four separate brand codebases shared a common component and state foundation.",
+        "International retail brands selling across GCC markets, where organic traffic and checkout reliability directly drive revenue. Separate brand codebases shared a common component and state foundation.",
       role: "Software Engineer at Codilar Technologies — storefront engineering, performance, payments, shared component library, state architecture and analytics instrumentation.",
       stack: [
         {
@@ -195,7 +229,7 @@ export const projects: Project[] = [
         {
           title: "Checkout.com payment integration",
           detail:
-            "Built and shipped the payment gateway integration — tokenisation, 3DS authentication and order-confirmation webhooks — enabling secure, PCI-compliant checkout across all GCC storefronts.",
+            "Built and shipped the payment gateway integration — tokenisation, 3DS authentication and order-confirmation webhooks — enabling secure, PCI-compliant checkout across GCC storefronts.",
         },
         {
           title: "Cross-project component library",
@@ -213,20 +247,15 @@ export const projects: Project[] = [
             "Instrumented the full e-commerce funnel with GTM data-layer events — impressions, add-to-cart, checkout steps and purchases — for accurate conversion attribution.",
         },
         {
-          title: "Platform rebuild",
-          detail:
-            "Rebuilt and stabilised the Ooka storefront on React/Next.js after an AEM migration proof-of-concept was evaluated, delivering the platform the client ultimately committed to production.",
-        },
-        {
           title: "Release workflow",
           detail:
             "Contributed to CI/CD and PR review workflows via Akinon ACC, shipping through a tag-based, zero-downtime deployment flow: create and push a release tag, build the tag, then deploy it.",
         },
       ],
       impact: [
-        "1M+ monthly users across four storefronts",
+        "1M+ monthly users across GCC storefronts",
         "Lighthouse performance 65 → 90+",
-        "PCI-compliant checkout across all GCC storefronts",
+        "PCI-compliant checkout across GCC storefronts",
         "~30% faster feature delivery from the shared component library",
       ],
     },

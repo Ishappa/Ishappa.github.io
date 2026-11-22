@@ -17,7 +17,7 @@ export const impact: ImpactItem[] = [
     metric: "1M+",
     label: "Monthly users reached",
     detail:
-      "Four high-traffic Next.js/React storefronts across GCC markets, plus cross-platform apps serving hundreds of thousands of active shoppers.",
+      "High-traffic Next.js/React storefronts across GCC markets, plus cross-platform apps serving hundreds of thousands of active shoppers.",
   },
   {
     metric: "Checkout.com",
@@ -35,6 +35,6 @@ export const impact: ImpactItem[] = [
     metric: "Zero",
     label: "Critical production incidents",
     detail:
-      "Owned mobile releases end to end — Xcode and Gradle builds, TestFlight and Play Console staging, review coordination, phased rollout. Web releases ship through Akinon ACC on a tag-based, zero-downtime flow: create and push a release tag, build it, then deploy it.",
+      "Handled app submissions and releases for R&B, Whites and Koton GCC — Xcode and Gradle release builds, TestFlight and Play Console testing, App Store and Google Play submissions, review coordination and phased rollout. Web releases ship through Akinon ACC on a tag-based, zero-downtime flow: create and push a release tag, build it, then deploy it.",
   },
 ];

@@ -5,7 +5,7 @@ export const snapshot: SnapshotPillar[] = [
     label: "Mobile",
     headline: "React Native · iOS & Android",
     detail:
-      "Cross-platform shopping apps shipped to the App Store and Play Store, with React Navigation, deep linking, push notifications and phased rollouts.",
+      "React Native CLI (bare workflow) shopping apps with Expo Modules for specific native capabilities — built, submitted and released on the App Store and Google Play.",
   },
   {
     label: "Frontend",
@@ -17,7 +17,7 @@ export const snapshot: SnapshotPillar[] = [
     label: "Product",
     headline: "E-commerce across GCC markets",
     detail:
-      "Customer-facing retail platforms for R&B, Lulu GCC, Clarks, Ooka and Koton — four Next.js storefronts serving 1M+ monthly users.",
+      "Customer-facing retail platforms for R&B, Lulu GCC, Whites and Koton — web storefronts and mobile apps serving 1M+ monthly users.",
   },
   {
     label: "Engineering",

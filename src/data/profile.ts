@@ -8,11 +8,11 @@ export const profile = {
 
   /** Hero paragraph. Every clause is drawn from the resume. */
   intro:
-    "I build production mobile and web e-commerce applications — React Native apps shipped to the App Store and Play Store, and Next.js storefronts serving 1M+ monthly users across GCC markets, together with the payment integrations, performance work and release pipelines behind them.",
+    "I build production mobile and web e-commerce applications — React Native CLI apps released through the App Store and Google Play, and Next.js storefronts serving 1M+ monthly users across GCC markets, together with the payment integrations, performance work and app submissions behind them.",
 
   /** About / positioning. Kept to two short paragraphs for scannability. */
   about: [
-    "I'm a Software Engineer at Codilar Technologies in Bengaluru, working primarily on mobile and frontend for global e-commerce brands. Most of my work is customer-facing and in production: React Native shopping apps on iOS and Android, and React/Next.js storefronts for R&B, Lulu GCC, Clarks, Ooka and Koton across GCC markets. Day to day that means TypeScript, REST API integration, Redux Toolkit and Context API state for cart and checkout, Checkout.com payments, Core Web Vitals work, and owning releases from Xcode and Gradle builds through to phased rollout.",
+    "I'm a Software Engineer at Codilar Technologies in Bengaluru, working primarily on mobile and frontend for global e-commerce brands. Most of my work is customer-facing and in production: React Native shopping apps on iOS and Android, and web storefronts for R&B, Lulu GCC, Whites and Koton across GCC markets. Day to day that means TypeScript, REST API integration, Redux Toolkit and Context API state for cart and checkout, Checkout.com payments, Core Web Vitals work, and handling app submissions and releases — iOS and Android release builds, App Store and Google Play submissions, review coordination and rollout — for R&B, Whites and Koton GCC.",
     "Alongside that mobile and frontend core, I've worked on the backend of a production Django storefront, built a Java AEM migration proof-of-concept, and contributed Spring Boot REST APIs to an internal SaaS product. More recently I built an LLM tool-calling backend on FastAPI as a client proof of concept, and I use Claude Code and GitHub Copilot daily across the SDLC.",
   ],
 

@@ -6,11 +6,7 @@ next-env.d.ts
 .DS_Store
 .env*.local
 
-# Source resume variants are kept locally, not published.
+# Resume variants (current/, old/, and their build source) are kept locally, not published.
 # The single resume served by the site lives at public/Ishappa_N_Resume.pdf
-/Ishappa_FE_Resume.pdf
-/Ishappa_FullStack_AI_Resume.pdf
-/Ishappa_FullStack_Java_Resume.pdf
-
-# Local backups of resume PDFs before edits — not published
-/resume-backups/
+/resumes/
+/*.pdf

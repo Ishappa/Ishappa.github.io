@@ -3,10 +3,10 @@ import type { WorkItem } from "@/types/content";
 /** Backend work that doesn't warrant a full case study but is real and worth listing. */
 export const backendWork: (WorkItem & { tech: string[]; label: string })[] = [
   {
-    title: "Ooka Storefront — AEM Migration Proof-of-Concept",
+    title: "AEM Migration Proof-of-Concept (Java)",
     label: "Production / Client Project",
     detail:
-      "Built the Ooka AEM migration proof-of-concept in Java — custom components, Sling Servlets and OSGi services — which the client evaluated before committing to the React/Next.js rebuild that was then delivered to production.",
+      "Built an enterprise storefront's AEM migration proof-of-concept in Java — custom components, Sling Servlets and OSGi services — which the client evaluated before choosing a React/Next.js rebuild, then delivered to production.",
     tech: ["Java", "AEM", "Sling Servlets", "OSGi", "Core Components", "HTL"],
   },
   {

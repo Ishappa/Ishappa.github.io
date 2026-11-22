@@ -36,7 +36,11 @@ links: [
 Leave the array empty for anything not publicly linkable — nothing renders, and nothing is invented.
 
 The **Resume** button downloads `public/Ishappa_N_Resume.pdf`, which is currently a copy of
-`Ishappa_FE_Resume.pdf`. To change which resume the site serves, replace that one file.
+`resumes/current/Ishappa_FE_Resume.pdf`. To change which resume the site serves, replace that one file.
+
+All resume variants are generated from `resumes/source/build.py` (edit the text there, then run
+`python3 resumes/source/build.py`; needs Google Chrome). Older versions live in `resumes/old/`.
+The `resumes/` folder is git-ignored.
 
 ---
 
