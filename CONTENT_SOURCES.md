@@ -73,7 +73,7 @@ The whole `resumes/` folder is git-ignored; only `public/Ishappa_N_Resume.pdf`
 | Payment integration and session management across storefront and app | AI |
 | Production support: API integration, performance, root-cause bug fixing on live multi-region traffic | AI |
 | AEM migration PoC in Java (client not named) — custom components, Sling Servlets, OSGi, Core Components, HTL | JV, FE |
-| cWarmer: *basic backend functionality*, dashboard REST APIs, cache-status tracking, warmer-bot configuration | JV |
+| cWarmer: backend functionality (dashboard REST APIs and supporting services for cache-status tracking and warmer-bot configuration). "Basic" dropped at Ishappa's request, 2026-11-22 | JV, USER |
 
 ## AI / LLM (section 07; case studies `ai-enterprise-data-assistant`, `perflens`)
 

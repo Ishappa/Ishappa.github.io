@@ -13,7 +13,7 @@ export const backendWork: (WorkItem & { tech: string[]; label: string })[] = [
     title: "cWarmer, Codilar's SaaS Cache-Warming Platform",
     label: "Internal Product",
     detail:
-      "Contributed basic backend functionality to cWarmer, an internal SaaS product that keeps e-commerce storefronts pre-cached so pages don't load cold. Built and integrated dashboard REST APIs and supporting services for cache-status tracking and warmer-bot configuration.",
+      "Contributed backend functionality to cWarmer, an internal SaaS product that keeps e-commerce storefronts pre-cached so pages don't load cold. Built and integrated dashboard REST APIs and supporting services for cache-status tracking and warmer-bot configuration.",
     tech: ["Java", "Spring Boot", "REST APIs"],
   },
 ];
